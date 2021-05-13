@@ -14,20 +14,27 @@
 // var inStock = 10
 
 var food = "chicken curry";
+console.log(food);
 var type = "dinner";
+console.log(type);
 var inStock = 100;
+console.log(inStock);
 
 // Reassign (not initialize) your "inStock" variable from above. We got a new shipment! Use a built in math operator to make
 // the inStock count double what it currently is.
 inStock = inStock * 2;
 
+
 // Reassign (not initialize) your "inStock" variable from above. You got hungry and needed a snack!
 // Use a built in math operator to decrement the inStock count by 1.
 inStock = inStock -1;
 
+
 // Initialize a new variable "isFavorite", and assign it to a boolean value indicating
 // if the food you chose is your favorite food or not
 var isFavorite = false;
+console.log(isFavorite)
+
 
 
 // Create a new variable named "shouldOrderMore", and use a comparison operator to
@@ -36,6 +43,7 @@ var isFavorite = false;
 // comparison operator.
 
 var shouldOrderMore = inStock < 20;
+console.log(shouldOrderMore)
 
 //------------------------- Conditionals -------------------------//
 
@@ -57,11 +65,11 @@ if (stockCount => 1) {
 // statement 'I recently ate [food]'. In either case, the value stored in
 // the "food" variable should be included in the logged statement.
 
-if (isFavorite = "true") {
-  return(`My favorite food is ${food}!`);
+if (isFavorite === "true") {
+  console.log(`My favorite food is ${food}!`);
 } else {
-  return(`I recently ate ${food}`);
-}
+  console.log(`I recently ate ${food}.`);
+};
 
 //------------------------- Arrays -------------------------//
 
@@ -72,14 +80,14 @@ var vegetables = ["tomato", "potato", "brussel sprout", "zucchini", "collard gre
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
-console.log(vegetables[2]);
+vegetables[2];
 
 // Create a new variable "fruits" and assign it to an Array of 7
 // different fruits.
 var fruits = ["banana", "raspberry", "strawberry", "pineapple", "lemon", "orange", "lime"];
 
 // Write the code to access the 5th element of the array, using bracket notation.
-console.log(fruits[4]);
+fruits[4];
 
 //------------------------- Objects -------------------------//
 
@@ -98,4 +106,3 @@ var groceryStore = {
 // Write the code to add the key of location, with the value of 'Denver, Colorado'. Use dot
 // notation to do this. DO NOT modify your code from above.
 groceryStore.location = "Denver, Colorado";
-console.log(groceryStore);
