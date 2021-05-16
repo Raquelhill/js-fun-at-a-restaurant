@@ -1,13 +1,15 @@
-function nameMenuItem(name) {
-  return `Delicious ${name}`
+function nameMenuItem(menuItemName) {
+  var nameMenuItem = menuItemName
+  return `Delicious ${nameMenuItem}`
 };
 
 function createMenuItem(name, price, type) {
-  return {
+  var menuItem = {
     name: name,
     price: price,
     type: type,
   }
+  return menuItem;
 };
 
 function addIngredients(extraIngredient, ingredients) {
